@@ -1,4 +1,16 @@
 <resources>
-    <string name="app_name">My Application</string>
-    <string name="button_one">Button One</string>
+    <string name="app_name">Bdd First Project</string>
+    <string name="width">Lebar</string>
+    <string name="height">Tinggi</string>
+    <string name="calculate">Hitung</string>
+    <string name="result">Hasil</string>
+    <string name="length">Panjang</string>
+    <string name="data_received">Data Diterima</string>
+
+    <string name="button_one">Bar Volume</string>
+    <string name="button_two">Carry Data</string>
+    <string name="button_three">Dial a Number</string>
+    <string name="button_four">Button Four</string>
+    <string name="button_five">Button Five</string>
+    <string name="button_six">Button Six</string>
 </resources>

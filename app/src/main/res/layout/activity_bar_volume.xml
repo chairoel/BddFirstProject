@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    tools:context=".ui.BarVolume">
+
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/length" />
+
+  <EditText
+      android:id="@+id/edtLength"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:inputType="numberDecimal"
+      android:lines="1" />
+
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/width" />
+
+  <EditText
+      android:id="@+id/edtWidth"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:inputType="numberDecimal"
+      android:lines="1" />
+
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/height" />
+
+  <EditText
+      android:id="@+id/edtHeight"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:inputType="numberDecimal"
+      android:lines="1" />
+
+  <Button
+      android:id="@+id/btnCalculate"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/calculate" />
+
+  <TextView
+      android:id="@+id/tvResult"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center"
+      android:text="@string/result"
+      android:textSize="24sp"
+      android:textStyle="bold" />
+</LinearLayout>
