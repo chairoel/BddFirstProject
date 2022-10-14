@@ -7,7 +7,7 @@
     android:gravity="center"
     android:padding="24dp"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".ui.MainActivity">
 
     <Button
         android:id="@+id/btnOne"
@@ -18,28 +18,28 @@
 
     <Button
         android:id="@+id/btnTwo"
-        android:text="Button Two"
+        android:text="@string/button_two"
         android:layout_marginVertical="8dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
     <Button
         android:id="@+id/btnThree"
-        android:text="Button Three"
+        android:text="@string/button_three"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginVertical="8dp" />
 
     <Button
         android:id="@+id/btnFour"
-        android:text="Button Four"
+        android:text="@string/button_four"
         android:layout_width="match_parent"
         android:layout_marginVertical="8dp"
         android:layout_height="wrap_content" />
 
     <Button
         android:id="@+id/btnFive"
-        android:text="Button Five"
+        android:text="@string/button_five"
         android:layout_marginVertical="8dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
@@ -47,7 +47,7 @@
     <Button
         android:id="@+id/btnSix"
         android:layout_marginVertical="8dp"
-        android:text="Button Six"
+        android:text="@string/button_six"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 

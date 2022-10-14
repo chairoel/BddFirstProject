@@ -28,7 +28,10 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             }
 
             btnTwo -> {
-                Toast.makeText(this, btnTwo.text.toString(), Toast.LENGTH_SHORT).show()
+                val moveWithDataIntent = Intent(this@MainActivity, CarryDataActivity::class.java)
+                moveWithDataIntent.putExtra(CarryDataActivity.EXTRA_NAME, "DicodingAcademy Boy")
+                moveWithDataIntent.putExtra(CarryDataActivity.EXTRA_AGE, 5)
+                startActivity(moveWithDataIntent)
             }
 
             btnThree -> {
