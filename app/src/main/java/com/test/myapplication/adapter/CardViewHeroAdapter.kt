@@ -36,15 +36,15 @@ class CardViewHeroAdapter(
         holder.tvDetail.text = hero.detail
 
         holder.btnFavorite.setOnClickListener {
-            Toast.makeText(context, "Favorite " + listHero[holder.adapterPosition].name, Toast.LENGTH_SHORT).show()
+            Toast.makeText(context, "Favorite " + listHero[position].name, Toast.LENGTH_SHORT).show()
         }
 
         holder.btnShare.setOnClickListener {
-            Toast.makeText(context, "Share " + listHero[holder.adapterPosition].name, Toast.LENGTH_SHORT).show()
+            Toast.makeText(context, "Share " + listHero[position].name, Toast.LENGTH_SHORT).show()
         }
 
         holder.itemView.setOnClickListener {
-            Toast.makeText(context, "Kamu memilih " + listHero[holder.adapterPosition].name, Toast.LENGTH_SHORT).show()
+            Toast.makeText(context, "Kamu memilih " + listHero[position].name, Toast.LENGTH_SHORT).show()
         }
     }
 
