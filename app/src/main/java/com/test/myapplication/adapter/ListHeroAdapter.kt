@@ -2,7 +2,6 @@ package com.test.myapplication.adapter
 
 import android.view.LayoutInflater
 import android.view.View
-import android.view.View.OnClickListener
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
@@ -16,6 +15,11 @@ import com.test.myapplication.data.Hero
 class ListHeroAdapter(
     private var listHero: ArrayList<Hero>
 ) : RecyclerView.Adapter<ListHeroAdapter.ListViewHolder>() {
+
+    private lateinit var onItemClickCallback: OnItemClickCallback
+    fun setOnItemClickCallback(onItemClickCallback: OnItemClickCallback) {
+        this.onItemClickCallback = onItemClickCallback
+    }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ListViewHolder {
         val view: View = LayoutInflater.from(parent.context).inflate(R.layout.item_row_hero, parent, false)
@@ -33,6 +37,10 @@ class ListHeroAdapter(
         holder.tvName.text = hero.name
 
         holder.tvDetail.text = hero.detail
+
+        holder.itemView.setOnClickListener {
+            onItemClickCallback.onItemClicked(listHero[position])
+        }
     }
 
     override fun getItemCount(): Int {
