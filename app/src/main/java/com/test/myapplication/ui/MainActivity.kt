@@ -45,7 +45,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             }
 
             btnFive -> {
-                Toast.makeText(this, btnFive.text.toString(), Toast.LENGTH_SHORT).show()
+                startActivity(Intent(this@MainActivity, RecyclerViewActivity::class.java))
             }
 
             btnSix -> {
