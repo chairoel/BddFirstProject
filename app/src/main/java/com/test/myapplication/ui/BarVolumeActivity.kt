@@ -6,7 +6,7 @@ import android.view.View
 import com.test.myapplication.R
 import kotlinx.android.synthetic.main.activity_bar_volume.*
 
-class BarVolume : AppCompatActivity(), View.OnClickListener {
+class BarVolumeActivity : AppCompatActivity(), View.OnClickListener {
 
     companion object {
         private const val STATE_RESULT = "save"

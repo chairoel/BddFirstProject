@@ -20,7 +20,7 @@
             android:name=".ui.CarryDataActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.BarVolume"
+            android:name=".ui.BarVolumeActivity"
             android:exported="false" />
         <activity
             android:name=".ui.MainActivity"
