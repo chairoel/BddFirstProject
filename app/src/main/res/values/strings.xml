@@ -11,7 +11,7 @@
     <string name="button_two">Carry Data</string>
     <string name="button_three">Dial a Number</string>
     <string name="button_four">View And Views</string>
-    <string name="button_five">Button Five</string>
+    <string name="button_five">Recycler View</string>
     <string name="button_six">Button Six</string>
 
     <string name="content_text">Google officially announced its much-anticipated Pixel phones; the Pixel and Pixel XL, on October 4. We attended Google’s London UK event, mirroring the main one taking place in San Francisco, US, where the firm unwrapped the new Android 7.1 Nougat devices which will apparently usurp Google’s long-standing Nexus series.</string>
@@ -37,4 +37,12 @@
     <string name="buy">Beli</string>
     <string name="dummy_value">$735</string>
     <string name="dummy_photos">6 photos</string>
+
+    <string name="heroes_name">Nama Pahlawan</string>
+    <string name="detail">Detail</string>
+    <string name="list">List</string>
+    <string name="grid">Grid</string>
+    <string name="card_view">With CardView</string>
+    <string name="favorite">Favorite</string>
+    <string name="share">Share</string>
 </resources>
