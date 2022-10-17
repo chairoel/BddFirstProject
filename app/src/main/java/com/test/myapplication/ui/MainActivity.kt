@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     override fun onClick(view: View?) {
         when (view) {
             btnOne -> {
-                startActivity(Intent(this@MainActivity, BarVolume::class.java))
+                startActivity(Intent(this@MainActivity, BarVolumeActivity::class.java))
             }
 
             btnTwo -> {
