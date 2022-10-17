@@ -1,6 +1,8 @@
 package com.test.myapplication.ui
 
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.test.myapplication.R
@@ -21,6 +23,29 @@ class RecyclerViewActivity : AppCompatActivity() {
         rvHeroes.setHasFixedSize(true)
         list = HeroesData.listData
         showRecyclerList(list)
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        menuInflater.inflate(R.menu.menu, menu)
+        return super.onCreateOptionsMenu(menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        setMode(item.itemId)
+        return super.onOptionsItemSelected(item)
+    }
+
+    private fun setMode(selectedMode: Int) {
+        when (selectedMode) {
+            R.id.action_list -> {
+            }
+
+            R.id.action_grid -> {
+            }
+
+            R.id.action_cardview -> {
+            }
+        }
     }
 
     private fun showRecyclerList(data: List<Hero>) {
