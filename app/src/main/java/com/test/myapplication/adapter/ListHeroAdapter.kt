@@ -12,9 +12,8 @@ import com.test.myapplication.R
 import com.test.myapplication.data.Hero
 
 
-class ListHeroAdapter(
-    private var listHero: ArrayList<Hero>
-) : RecyclerView.Adapter<ListHeroAdapter.ListViewHolder>() {
+class ListHeroAdapter(private var listHero: ArrayList<Hero>) :
+    RecyclerView.Adapter<ListHeroAdapter.ListViewHolder>() {
 
     private lateinit var onItemClickCallback: OnItemClickCallback
     fun setOnItemClickCallback(onItemClickCallback: OnItemClickCallback) {
@@ -22,7 +21,8 @@ class ListHeroAdapter(
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ListViewHolder {
-        val view: View = LayoutInflater.from(parent.context).inflate(R.layout.item_row_hero, parent, false)
+        val view: View =
+            LayoutInflater.from(parent.context).inflate(R.layout.item_row_hero, parent, false)
         return ListViewHolder(view)
     }
 
